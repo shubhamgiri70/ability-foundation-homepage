@@ -41,7 +41,7 @@ const Navbar = () => {
             <a href="#" className="nav-link dropdown-toggle">
               Employment
             </a>
-            <ul class="dropdown-menu">
+            <ul className="dropdown-menu">
               <li>
                 <a className="dropdown-item" href="#">
                   Employment

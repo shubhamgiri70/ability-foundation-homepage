@@ -1,0 +1,57 @@
+.hero {
+  background-color: #ebf5d5;
+  background-size: cover;
+  height: auto;
+
+  .hero-content {
+    width: 37%;
+    position: absolute;
+    top: 250px;
+    left: 170px;
+
+    h1 {
+      font-family: "Rufina", serif;
+      font-size: 3.5rem;
+      font-weight: 300;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+
+    .hero-buttons {
+      .btn {
+        background-color: #7db34b;
+        border-radius: 5rem;
+        padding: 0.8rem 1.8rem;
+        color: white;
+        margin-right: 1rem;
+
+        &:hover {
+          background-color: #8dc15b;
+          color: white;
+        }
+      }
+
+      .second {
+        background-color: #212529;
+
+        &:hover {
+          background-color: #424649;
+        }
+      }
+    }
+  }
+
+  .bg-img {
+    position: relative;
+    left: 520px;
+    background-image: url("https://abilityfoundation.org/2024-new/wp-content/themes/ability/img/banner-home2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 830px;
+    width: 70%;
+    border-top-left-radius: 3.5rem;
+  }
+}

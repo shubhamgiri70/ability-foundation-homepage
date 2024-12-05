@@ -35,7 +35,7 @@
         background-color: #7db34b;
         border-radius: 5rem;
         padding: 0.8rem 1.8rem;
- 
+        color: white;
 
         &:hover {
           background-color: #8dc15b;
