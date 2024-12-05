@@ -1,7 +1,4 @@
-.magazine {
-  margin-top: 8rem;
-  background-color: rgb(248, 249, 250);
-
+.enrollment {
   .row {
     padding: 4rem;
 
@@ -33,21 +30,33 @@
         font-size: 1rem;
         color: #495057;
       }
-    }
+      .button-group {
+        .btn {
+          background-color: #7db34b;
+          border-radius: 5rem;
+          padding: 0.8rem 1.8rem;
+          color: white;
+          margin-right: 1rem;
 
-    .btn {
-      background-color: #7db34b;
-      border-radius: 5rem;
-      padding: 0.8rem 1.8rem;
-      color: white;
-      margin-right: 1rem;
+          i {
+            margin-right: 6px;
+          }
 
-      &:hover {
-        background-color: #8dc15b;
-        color: white;
+          &:hover {
+            background-color: #8dc15b;
+            color: white;
+          }
+        }
+
+        .primary {
+          background-color: #212529;
+
+          &:hover {
+            background-color: #424649;
+          }
+        }
       }
     }
-
     .image-section {
       width: 40%;
 
@@ -62,23 +71,6 @@
         height: 80%;
         object-fit: cover;
       }
-    }
-  }
-}
-
-.all-cards {
-  display: flex;
-  justify-content: space-around;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  padding-bottom: 4rem;
-  .card {
-    width: 31.5%;
-
-    p {
-      font-size: 1.25rem;
-      font-weight: 400;
-      color: rgb(73, 80, 87);
     }
   }
 }
