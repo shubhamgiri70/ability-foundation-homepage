@@ -1,0 +1,96 @@
+.magazine {
+  margin-top: 8rem;
+  background-color: rgb(248, 249, 250);
+
+  .row {
+    padding: 4rem;
+
+    .text-section {
+      width: 40%;
+
+      .badge {
+        display: inline-block;
+        padding: 0.4rem 0.7rem 0.3rem;
+        border-radius: 0.3rem;
+        font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+          "Noto Color Emoji";
+        letter-spacing: 2px;
+        font-weight: 400;
+        text-transform: uppercase;
+        background: #bcdb6f;
+        font-size: 0.8em;
+        margin-bottom: 0.8rem;
+      }
+
+      h2 {
+        font-family: "Rufina", serif;
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+      p {
+        font-size: 1rem;
+        color: #495057;
+      }
+      .button-group {
+        .btn {
+          background-color: #7db34b;
+          border-radius: 5rem;
+          padding: 0.8rem 1.8rem;
+          color: white;
+          margin-right: 1rem;
+
+          i {
+            margin-right: 6px;
+          }
+
+          &:hover {
+            background-color: #8dc15b;
+            color: white;
+          }
+        }
+
+        .primary {
+          background-color: #212529;
+
+          &:hover {
+            background-color: #424649;
+          }
+        }
+      }
+    }
+    .image-section {
+      width: 40%;
+
+      .img-one {
+        width: 60%;
+        object-fit: cover;
+        margin-right: 2rem;
+      }
+
+      .img-two {
+        width: 45%;
+        height: 80%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.all-cards {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 4rem;
+  padding-right: 4rem;
+
+  .card {
+    width: 31.5%;
+
+    p {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: rgb(73, 80, 87);
+    }
+  }
+}

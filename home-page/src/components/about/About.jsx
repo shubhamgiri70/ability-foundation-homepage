@@ -18,10 +18,8 @@ const About = () => {
           />
         </div>
         <div className="about-content text-content">
-          <p className="badge bg-light-green text-uppercase fw-bold">
-            Who Are We
-          </p>
-          <h2 className="fw-bold">
+          <p className="badge">Who Are We</p>
+          <h2>
             We are committed to empowering and mainstreaming persons with
             disabilities
           </h2>
