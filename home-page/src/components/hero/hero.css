@@ -2,6 +2,7 @@
   background-color: #ebf5d5;
   background-size: cover;
   height: auto;
+  overflow: hidden;
 
   .hero-content {
     width: 37%;

@@ -7,6 +7,7 @@ import Enrollment from "./components/enrollment/Enrollment";
 import Events from "./components/events/Events";
 import Articles from "./components/articles/Articles";
 import EmploymentWing from "./components/employmentwing/EmploymentWing";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Events />
         <EmploymentWing />
         <Articles />
+        <Footer />
       </div>
     </>
   );

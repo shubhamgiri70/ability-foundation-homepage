@@ -1,0 +1,149 @@
+.footer {
+  padding: 3rem 0;
+  overflow: hidden;
+  background-color: #212529;
+  color: #b3b3b3;
+  position: relative;
+  background-size: cover;
+  height: 70vh;
+
+  .icon {
+    position: absolute;
+    left: 1280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 400px;
+    padding-top: 6rem;
+  }
+}
+
+.uppertext {
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+
+  h1 {
+    width: 52%;
+    color: #fff;
+    font-size: 4rem;
+    font-family: "Rufina", serif;
+  }
+
+  .btn {
+    width: 15%;
+    color: #fff;
+    z-index: 9;
+
+    button {
+      background-color: #7db34b;
+      padding: 0.8rem 1.8rem;
+      border-radius: 3px;
+      &:hover {
+        background-color: #8dc15b;
+        color: white;
+      }
+    }
+  }
+}
+
+.footerdown {
+  justify-content: space-between;
+
+  h3 {
+    color: #fff;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 0.8rem;
+
+    &:hover {
+      color: #7db34b;
+    }
+  }
+
+  .left-nav {
+    width: 50%;
+    justify-content: space-between;
+
+    .about-us {
+      width: 60%;
+
+      p {
+        line-height: 1.5;
+      }
+
+      .socials {
+        i {
+          margin: 1rem;
+          background-color: #7db34b;
+          color: white;
+          padding: 0.9rem;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .links {
+      width: 30%;
+    }
+  }
+
+  .right-nav {
+    width: 45%;
+    justify-content: space-between;
+
+    .employment {
+      width: 30%;
+    }
+
+    .contact-us {
+      width: 60%;
+      z-index: 9;
+
+      ul {
+        li {
+          i {
+            color: #7db34b;
+          }
+        }
+      }
+    }
+  }
+}
+#fixed-icons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 90%;
+  right: 2rem;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+#fixed-icons i {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  padding: 0.6rem;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+#fixed-icons .fa-share-nodes {
+  background-color: #212529;
+}
+
+#fixed-icons .fa-whatsapp {
+  background-color: #7db34b;
+}
+
+/* Add hover effect */
+#fixed-icons i:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+}

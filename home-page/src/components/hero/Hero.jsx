@@ -4,7 +4,7 @@ import "./hero.css";
 const Hero = () => {
   return (
     <div className="hero">
-      <div className="bg-img"></div>
+      <div className="bg-img img-fluid"></div>
       <div className="hero-content">
         <h1>
           We are committed to the inclusion and empowering of all persons with
