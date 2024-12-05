@@ -34,17 +34,30 @@
         color: #495057;
       }
     }
-
-    .btn {
-      background-color: #7db34b;
-      border-radius: 5rem;
-      padding: 0.8rem 1.8rem;
-      color: white;
-      margin-right: 1rem;
-
-      &:hover {
-        background-color: #8dc15b;
+    .button-group {
+      .btn {
+        background-color: #7db34b;
+        border-radius: 5rem;
+        padding: 0.8rem 1.8rem;
         color: white;
+        margin-right: 1rem;
+
+        &:hover {
+          background-color: #8dc15b;
+          color: white;
+        }
+      }
+
+      i {
+        margin-right: 6px;
+      }
+
+      .primary {
+        background-color: #212529;
+
+        &:hover {
+          background-color: #424649;
+        }
       }
     }
 
