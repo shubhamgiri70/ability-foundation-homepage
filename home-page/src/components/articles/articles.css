@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  flex-wrap: wrap; 
 }
 
 .text-section {
@@ -100,7 +100,7 @@
   color: #6c757d;
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 1024px) {
   .articles .container {
     flex-direction: column;
@@ -168,34 +168,34 @@
   }
 
   .card img {
-    height: 180px; /* Adjust image size */
+    height: 180px; 
   }
 
   .card-title {
-    font-size: 0.9rem; /* Smaller title on smaller screens */
+    font-size: 0.9rem;
   }
 
   .date {
-    font-size: 0.8rem; /* Smaller date font size */
+    font-size: 0.8rem;
   }
 
   .text-section h2 {
-    font-size: 2rem; /* Reduce header size */
+    font-size: 2rem; 
   }
 
   .text-section p {
-    font-size: 0.9rem; /* Adjust paragraph font size */
+    font-size: 0.9rem; 
   }
 }
 
 @media (max-width: 576px) {
   .articles .container {
-    flex-direction: column; /* Stack text and carousel vertically */
+    flex-direction: column; 
     align-items: center;
   }
 
   .text-section {
-    width: 100%; /* Make text section full width on mobile */
+    width: 100%; 
     text-align: center;
     margin-bottom: 1.5rem;
   }
@@ -209,27 +209,27 @@
   }
 
   .col-4 {
-    padding: 0; /* Remove padding */
-    margin-bottom: 1rem; /* Space between columns */
+    padding: 0;
+    margin-bottom: 1rem; 
   }
 
   .card img {
-    height: 150px; /* Reduce image height */
+    height: 150px; 
   }
 
   .card-title {
-    font-size: 0.85rem; /* Smaller card title */
+    font-size: 0.85rem; 
   }
 
   .date {
-    font-size: 0.75rem; /* Smaller date font size */
+    font-size: 0.75rem; 
   }
 
   .text-section h2 {
-    font-size: 1.6rem; /* Further reduce header size for mobile */
+    font-size: 1.6rem; 
   }
 
   .text-section p {
-    font-size: 0.85rem; /* Reduce paragraph font size for better readability */
+    font-size: 0.85rem;
   }
 }
