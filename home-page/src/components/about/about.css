@@ -1,9 +1,11 @@
 .about {
   margin-top: 8rem;
 
+  /* About Image Section */
   .about-img {
     position: relative;
     width: 38%;
+    margin-bottom: 2rem;
 
     .primary-img {
       max-width: 100%;
@@ -17,8 +19,11 @@
     }
   }
 
+  /* About Content Section */
   .about-content {
     width: 40%;
+    text-align: left;
+    padding: 0 20px;
 
     .badge {
       display: inline-block;
@@ -40,23 +45,120 @@
       font-family: "Rufina", serif;
       font-size: 2.5rem;
       font-weight: 600;
+      margin-bottom: 1rem;
     }
+
     p {
       font-size: 1rem;
       color: #495057;
+      margin-bottom: 1.5rem;
     }
+
     .btn {
       background-color: #7db34b;
       border-radius: 5rem;
       padding: 0.8rem 1.8rem;
       color: white;
       margin-right: 1rem;
+      font-size: 1rem;
 
       &:hover {
         background-color: #8dc15b;
         color: white;
       }
-      
+    }
+  }
+
+  /* Media Queries for responsiveness */
+  @media (max-width: 1024px) {
+    .about-img {
+      width: 45%; /* Adjust image size on tablets */
+    }
+
+    .about-content {
+      width: 50%; /* Adjust content width on tablets */
+      text-align: center; /* Center text on smaller screens */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about {
+      margin-top: 3rem; /* Reduce margin on smaller screens */
+    }
+
+    .about-img {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1rem;
+
+      .primary-img {
+        max-width: 80%; /* Scale down the primary image */
+        margin-bottom: 1rem;
+      }
+
+      .secondary-img {
+        right: -30px;
+        bottom: -20px;
+        width: 80%; /* Scale secondary image */
+      }
+    }
+
+    .about-content {
+      width: 100%;
+      padding: 0 15px;
+    }
+
+    h2 {
+      font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+
+    p {
+      font-size: 1.1rem; /* Adjust paragraph size for readability */
+    }
+
+    .btn {
+      width: 100%; /* Full-width button on smaller screens */
+      margin-top: 1rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .about {
+      margin-top: 2rem;
+    }
+
+    .about-img {
+      width: 100%;
+      text-align: center;
+
+      .primary-img {
+        width: 90%;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      .secondary-img {
+        display: none; /* Hide secondary image on very small screens */
+      }
+    }
+
+    .about-content {
+      width: 100%;
+      padding: 0 10px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.75rem; /* Further reduce the heading size */
+    }
+
+    p {
+      font-size: 1rem; /* Adjust paragraph size */
+    }
+
+    .btn {
+      width: 100%; /* Full-width button */
+      padding: 1rem;
     }
   }
 }

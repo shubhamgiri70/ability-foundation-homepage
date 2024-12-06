@@ -17,18 +17,6 @@ const Navbar = () => {
             <a href="#" className="nav-link dropdown-toggle">
               Our Story
             </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a className="dropdown-item" href="#">
-                  Who we are
-                </a>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
-                  Our Team
-                </a>
-              </li>
-            </ul>
           </li>
           <li>
             <a href="#">Success & ABILITY</a>
@@ -41,45 +29,11 @@ const Navbar = () => {
             <a href="#" className="nav-link dropdown-toggle">
               Employment
             </a>
-            <ul className="dropdown-menu">
-              <li>
-                <a className="dropdown-item" href="#">
-                  Employment
-                </a>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
-                  Workshops & Events
-                </a>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
-                  Programmes
-                </a>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
-                  EmployABILITY
-                </a>
-              </li>
-            </ul>
           </li>
           <li className="nav-item dropdown">
             <a href="#" className="nav-link dropdown-toggle">
               Events
             </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a className="dropdown-item" href="#">
-                  CavinKare Awards
-                </a>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
-                  Past Events
-                </a>
-              </li>
-            </ul>
           </li>
         </ul>
         <div>

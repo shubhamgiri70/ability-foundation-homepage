@@ -7,6 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .text-section {
@@ -51,6 +52,10 @@
   color: white;
 }
 
+.carousel {
+  width: 50%;
+}
+
 .carousel-inner {
   display: flex;
   justify-content: center;
@@ -93,4 +98,138 @@
 .date {
   font-size: 0.9rem;
   color: #6c757d;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .articles .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-section {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .carousel {
+    width: 50%;
+  }
+
+  .carousel-inner {
+    display: block;
+  }
+
+  .carousel-item {
+    margin-bottom: 2rem;
+  }
+
+  .col-4 {
+    padding: 0 5px;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .date {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .articles .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-section {
+    width: 90%;
+  }
+
+  .carousel-inner {
+    display: block;
+  }
+
+  .carousel-item {
+    margin-bottom: 2rem;
+  }
+
+  .col-4 {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .card img {
+    height: 180px; /* Adjust image size */
+  }
+
+  .card-title {
+    font-size: 0.9rem; /* Smaller title on smaller screens */
+  }
+
+  .date {
+    font-size: 0.8rem; /* Smaller date font size */
+  }
+
+  .text-section h2 {
+    font-size: 2rem; /* Reduce header size */
+  }
+
+  .text-section p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+}
+
+@media (max-width: 576px) {
+  .articles .container {
+    flex-direction: column; /* Stack text and carousel vertically */
+    align-items: center;
+  }
+
+  .text-section {
+    width: 100%; /* Make text section full width on mobile */
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .carousel-inner {
+    display: block;
+  }
+
+  .carousel-item {
+    margin-bottom: 2rem;
+  }
+
+  .col-4 {
+    padding: 0; /* Remove padding */
+    margin-bottom: 1rem; /* Space between columns */
+  }
+
+  .card img {
+    height: 150px; /* Reduce image height */
+  }
+
+  .card-title {
+    font-size: 0.85rem; /* Smaller card title */
+  }
+
+  .date {
+    font-size: 0.75rem; /* Smaller date font size */
+  }
+
+  .text-section h2 {
+    font-size: 1.6rem; /* Further reduce header size for mobile */
+  }
+
+  .text-section p {
+    font-size: 0.85rem; /* Reduce paragraph font size for better readability */
+  }
 }

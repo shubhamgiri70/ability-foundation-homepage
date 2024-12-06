@@ -1,7 +1,12 @@
+/* Navbar styles */
 .navbar {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  background-color: white;
+
   .logo {
     padding-left: 30px;
-
     img {
       width: 120px;
       cursor: pointer;
@@ -10,9 +15,13 @@
 
   .right {
     margin-right: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
     ul {
       margin: 0;
+      display: flex;
 
       li {
         margin-right: 70px;
@@ -30,6 +39,7 @@
         }
       }
     }
+
     div {
       .btn {
         background-color: #7db34b;
@@ -42,6 +52,55 @@
           color: white;
         }
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .right {
+      display: block;
+      text-align: center;
+
+      ul {
+        flex-direction: column;
+        padding: 10px 0;
+        margin: 20px 0;
+      }
+
+      li {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      .btn {
+        width: 100%;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .logo {
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .right {
+      width: 100%;
+      padding: 0 10px;
+    }
+
+    ul {
+      display: block;
+      text-align: center;
+    }
+
+    li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      width: 100%;
     }
   }
 }

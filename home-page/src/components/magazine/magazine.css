@@ -6,7 +6,7 @@
     padding: 4rem;
 
     .text-section {
-      width: 40%;
+      width: 40%; /* Set width to 40% on larger screens */
 
       .badge {
         display: inline-block;
@@ -28,12 +28,16 @@
         font-family: "Rufina", serif;
         font-size: 2.5rem;
         font-weight: 600;
+        margin-bottom: 1rem;
       }
+
       p {
         font-size: 1rem;
         color: #495057;
+        margin-bottom: 1.5rem;
       }
     }
+
     .button-group {
       .btn {
         background-color: #7db34b;
@@ -62,7 +66,9 @@
     }
 
     .image-section {
-      width: 40%;
+      width: 40%; /* Set width to 40% on larger screens */
+      display: flex;
+      justify-content: space-between;
 
       .img-one {
         width: 60%;
@@ -77,21 +83,138 @@
       }
     }
   }
-}
 
-.all-cards {
-  display: flex;
-  justify-content: space-around;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  padding-bottom: 4rem;
-  .card {
-    width: 31.5%;
+  /* Media Queries for responsiveness */
+  @media (max-width: 1024px) {
+    .row {
+      padding: 2rem;
+    }
 
-    p {
-      font-size: 1.25rem;
-      font-weight: 400;
-      color: rgb(73, 80, 87);
+    .text-section {
+      width: 50%; /* Adjust width for tablets */
+      text-align: center;
+    }
+
+    .image-section {
+      width: 50%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .img-one {
+        width: 80%; /* Adjust image size for tablet screens */
+        margin-bottom: 1rem;
+      }
+
+      .img-two {
+        width: 80%;
+        height: auto; /* Make height auto for better flexibility */
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .magazine {
+      margin-top: 4rem; /* Reduce margin on smaller screens */
+    }
+
+    .row {
+      padding: 1rem;
+    }
+
+    .text-section {
+      width: 100%; /* Full width on mobile */
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .image-section {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+
+      .img-one {
+        width: 90%;
+        margin-bottom: 1rem;
+      }
+
+      .img-two {
+        width: 90%;
+        height: auto;
+      }
+    }
+
+    .button-group {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .magazine {
+      margin-top: 2rem; /* Further reduce margin on very small screens */
+    }
+
+    .text-section {
+      width: 100%; /* Full width on small mobile screens */
+    }
+
+    .h2 {
+      font-size: 1.8rem; /* Reduce heading size for small screens */
+    }
+
+    .p {
+      font-size: 0.9rem; /* Adjust paragraph size */
+    }
+
+    .button-group {
+      display: block;
+      .btn {
+        width: 100%;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .all-cards {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 4rem;
+    flex-wrap: wrap;
+
+    .card {
+      width: 31.5%;
+      margin-bottom: 2rem; /* Add space between cards */
+
+      .card-img-top {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .card-body {
+        padding: 1rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: rgb(73, 80, 87);
+      }
+    }
+  }
+
+  /* Media Query for cards */
+  @media (max-width: 768px) {
+    .all-cards {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .card {
+      width: 100%; /* Full width on small screens */
+      margin-bottom: 2rem;
     }
   }
 }

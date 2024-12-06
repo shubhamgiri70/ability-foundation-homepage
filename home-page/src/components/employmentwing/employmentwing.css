@@ -2,10 +2,15 @@
   margin: 7rem 0;
 
   .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    /* Image Section */
     .employmentwing-img {
       position: relative;
-      width: 38%;
-
+      width: 40%;
       .primary-img {
         max-width: 100%;
         border-radius: 8px;
@@ -18,8 +23,11 @@
       }
     }
 
+    /* Content Section */
     .employmentwing-content {
-      width: 44%;
+      width: 45%;
+      text-align: center;
+      padding: 1rem;
 
       .badge {
         display: inline-block;
@@ -41,27 +49,30 @@
         font-family: "Rufina", serif;
         font-size: 2.5rem;
         font-weight: 600;
+        margin-bottom: 1rem;
       }
+
       p {
         font-size: 1rem;
         color: #495057;
+        margin-bottom: 1.5rem;
       }
+
       .button-group {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
         .btn {
           background-color: #7db34b;
           border-radius: 5rem;
           padding: 0.8rem 1.8rem;
           color: white;
-          margin-right: 1rem;
 
           &:hover {
             background-color: #8dc15b;
             color: white;
           }
-        }
-
-        i {
-          margin-right: 6px;
         }
 
         .primary {
@@ -70,6 +81,84 @@
           &:hover {
             background-color: #424649;
           }
+        }
+      }
+    }
+  }
+
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1024px) {
+    .container {
+      .employmentwing-img {
+        width: 100%;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .employmentwing-content {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      .employmentwing-img {
+        width: 80%;
+        margin-bottom: 2rem;
+      }
+
+      .employmentwing-content {
+        width: 80%;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      .button-group {
+        flex-direction: column;
+        align-items: center;
+
+        .btn {
+          width: 100%;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .container {
+      .employmentwing-img {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+
+      .employmentwing-content {
+        width: 100%;
+        padding: 1rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.85rem;
+      }
+
+      .button-group {
+        .btn {
+          width: 100%;
+          padding: 1rem 0;
+          margin-bottom: 1rem;
         }
       }
     }

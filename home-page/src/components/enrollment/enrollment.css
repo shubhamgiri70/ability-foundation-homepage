@@ -3,7 +3,7 @@
     padding: 4rem;
 
     .text-section {
-      width: 40%;
+      width: 40%; /* Set width to 40% on larger screens */
 
       .badge {
         display: inline-block;
@@ -25,11 +25,15 @@
         font-family: "Rufina", serif;
         font-size: 2.5rem;
         font-weight: 600;
+        margin-bottom: 1rem;
       }
+
       p {
         font-size: 1rem;
         color: #495057;
+        margin-bottom: 1.5rem;
       }
+
       .button-group {
         .btn {
           background-color: #7db34b;
@@ -38,14 +42,14 @@
           color: white;
           margin-right: 1rem;
 
-          i {
-            margin-right: 6px;
-          }
-
           &:hover {
             background-color: #8dc15b;
             color: white;
           }
+        }
+
+        i {
+          margin-right: 6px;
         }
 
         .primary {
@@ -57,8 +61,11 @@
         }
       }
     }
+
     .image-section {
-      width: 40%;
+      width: 40%; /* Set width to 40% on larger screens */
+      display: flex;
+      justify-content: space-between;
 
       .img-one {
         width: 60%;
@@ -70,6 +77,97 @@
         width: 45%;
         height: 80%;
         object-fit: cover;
+      }
+    }
+  }
+
+  /* Media Queries for responsiveness */
+  @media (max-width: 1024px) {
+    .row {
+      padding: 2rem;
+    }
+
+    .text-section {
+      width: 50%; /* Adjust width for tablets */
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .image-section {
+      width: 50%;
+      flex-direction: column;
+      align-items: center;
+
+      .img-one {
+        width: 80%; /* Adjust image size for tablet screens */
+        margin-bottom: 1rem;
+      }
+
+      .img-two {
+        width: 80%;
+        height: auto; /* Make height auto for better flexibility */
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .enrollment {
+      margin-top: 4rem; /* Reduce margin on smaller screens */
+    }
+
+    .row {
+      padding: 1rem;
+    }
+
+    .text-section {
+      width: 100%; /* Full width on mobile */
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .image-section {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+
+      .img-one {
+        width: 90%;
+        margin-bottom: 1rem;
+      }
+
+      .img-two {
+        width: 90%;
+        height: auto;
+      }
+    }
+
+    .button-group {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .enrollment {
+      margin-top: 2rem; /* Further reduce margin on very small screens */
+    }
+
+    .text-section {
+      width: 100%; /* Full width on small mobile screens */
+    }
+
+    .h2 {
+      font-size: 1.8rem; /* Reduce heading size for small screens */
+    }
+
+    .p {
+      font-size: 0.9rem; /* Adjust paragraph size */
+    }
+
+    .button-group {
+      display: block;
+      .btn {
+        width: 100%;
+        margin-top: 1rem;
       }
     }
   }

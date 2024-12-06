@@ -3,14 +3,17 @@
   padding: 4rem 0;
 
   .container {
-
     .event-text {
-        
+      text-align: center;
+      margin-bottom: 3rem;
+
       h2 {
         font-family: "Rufina", serif;
         font-size: 2.5rem;
         font-weight: 500;
+        margin-bottom: 1rem;
       }
+
       p {
         font-size: 1rem;
         color: #495057;
@@ -18,10 +21,72 @@
     }
 
     .event-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
       img {
-        width: 250px;
+        width: 217px;
         margin: 3px;
         object-fit: cover;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  /* Media Queries for responsiveness */
+  @media (max-width: 1024px) {
+    .container {
+      .event-images {
+        justify-content: center;
+        img {
+          width: 200px; 
+          margin: 10px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 2rem; 
+      .event-text {
+        h2 {
+          font-size: 2rem; 
+        }
+
+        p {
+          font-size: 0.9rem; 
+        }
+      }
+
+      .event-images {
+        justify-content: center;
+        img {
+          width: 150px; 
+          height: 150px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .container {
+      .event-text {
+        h2 {
+          font-size: 1.8rem; 
+        }
+
+        p {
+          font-size: 0.85rem; 
+        }
+      }
+
+      .event-images {
+        img {
+          width: 120px; 
+          height: 120px;
+        }
       }
     }
   }
