@@ -137,15 +137,16 @@
 }
 
 #fixed-icons i:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
-
-/* Media queries for responsiveness */
 
 @media (max-width: 1024px) {
   .footer {
+    .container {
+      width: auto;
+    }
     height: auto;
-
+    text-align: start;
     .container {
       display: flex;
       flex-direction: column;
@@ -154,7 +155,7 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: start;
 
         h1 {
           font-size: 3.5rem;
@@ -163,18 +164,22 @@
       }
 
       .uppertext .btn {
-        width: 40%;
+        width: 25%;
         margin-top: 1rem;
       }
 
       .footerdown {
         flex-direction: column;
-        align-items: center;
+        align-items: start;
       }
 
       .footerdown {
         .left-nav {
           flex-direction: column;
+
+          .about-us {
+            margin-bottom: 1rem;
+          }
         }
 
         .right-nav {
@@ -185,17 +190,16 @@
   }
   #fixed-icons {
     right: 1rem;
-    top: 85%;
+    top: 92%;
   }
 
   .icon {
     width: 38vw;
     left: 63%;
-    top: 16rem;
+    top: 56rem;
   }
 }
 
-/* Small screens (Phones) */
 @media (max-width: 768px) {
   .footer {
     height: auto;
@@ -251,7 +255,6 @@
   }
 }
 
-/* Extra Small screens (Phones in portrait) */
 @media (max-width: 480px) {
   .footer {
     height: auto;

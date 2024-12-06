@@ -3,8 +3,7 @@
     padding: 4rem;
 
     .text-section {
-      width: 40%; /* Set width to 40% on larger screens */
-
+      width: 40%;
       .badge {
         display: inline-block;
         padding: 0.4rem 0.7rem 0.3rem;
@@ -63,7 +62,7 @@
     }
 
     .image-section {
-      width: 40%; /* Set width to 40% on larger screens */
+      width: 40%;
       display: flex;
       justify-content: space-between;
 
@@ -81,38 +80,39 @@
     }
   }
 
-  /* Media Queries for responsiveness */
   @media (max-width: 1024px) {
     .row {
       padding: 2rem;
-    }
-
-    .text-section {
-      width: 50%; /* Adjust width for tablets */
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    .image-section {
-      width: 50%;
       flex-direction: column;
-      align-items: center;
 
-      .img-one {
-        width: 80%; /* Adjust image size for tablet screens */
-        margin-bottom: 1rem;
+      .text-section {
+        width: 100%;
+        text-align: start;
+        margin-bottom: 2rem;
       }
 
-      .img-two {
-        width: 80%;
-        height: auto; /* Make height auto for better flexibility */
+      .image-section {
+        width: 100%;
+        flex-direction: column;
+        align-items: start !important;
+        margin-bottom: 2rem;
+
+        .img-one {
+          width: 100%;
+          margin-bottom: 3rem;
+        }
+
+        .img-two {
+          width: 80%;
+          height: auto;
+        }
       }
     }
   }
 
   @media (max-width: 768px) {
     .enrollment {
-      margin-top: 4rem; /* Reduce margin on smaller screens */
+      margin-top: 4rem;
     }
 
     .row {
@@ -120,7 +120,7 @@
     }
 
     .text-section {
-      width: 100%; /* Full width on mobile */
+      width: 100%;
       margin-bottom: 2rem;
       text-align: center;
     }
@@ -148,19 +148,19 @@
 
   @media (max-width: 576px) {
     .enrollment {
-      margin-top: 2rem; /* Further reduce margin on very small screens */
+      margin-top: 2rem;
     }
 
     .text-section {
-      width: 100%; /* Full width on small mobile screens */
+      width: 100%;
     }
 
     .h2 {
-      font-size: 1.8rem; /* Reduce heading size for small screens */
+      font-size: 1.8rem;
     }
 
     .p {
-      font-size: 0.9rem; /* Adjust paragraph size */
+      font-size: 0.9rem;
     }
 
     .button-group {

@@ -1,7 +1,6 @@
 .about {
   margin-top: 8rem;
 
-  /* About Image Section */
   .about-img {
     position: relative;
     width: 38%;
@@ -19,7 +18,6 @@
     }
   }
 
-  /* About Content Section */
   .about-content {
     width: 40%;
     text-align: left;
@@ -69,21 +67,28 @@
     }
   }
 
-  /* Media Queries for responsiveness */
   @media (max-width: 1024px) {
+    .container {
+      flex-direction: column;
+    }
+
     .about-img {
-      width: 45%; /* Adjust image size on tablets */
+      width: 100%;
+
+      .secondary-img {
+        right: -30px;
+      }
     }
 
     .about-content {
-      width: 50%; /* Adjust content width on tablets */
-      text-align: center; /* Center text on smaller screens */
+      width: 100%;
+      text-align: start;
     }
   }
 
   @media (max-width: 768px) {
     .about {
-      margin-top: 3rem; /* Reduce margin on smaller screens */
+      margin-top: 3rem;
     }
 
     .about-img {

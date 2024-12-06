@@ -7,7 +7,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-
     .employmentwing-img {
       position: relative;
       width: 40%;
@@ -22,7 +21,6 @@
         bottom: -23px;
       }
     }
-
 
     .employmentwing-content {
       width: 50%;
@@ -85,18 +83,21 @@
     }
   }
 
-
   @media (max-width: 1024px) {
     .container {
       .employmentwing-img {
         width: 100%;
         margin-bottom: 2rem;
         text-align: center;
+
+        .secondary-img {
+          right: -20px;
+        }
       }
 
       .employmentwing-content {
         width: 100%;
-        text-align: center;
+        text-align: start;
         padding: 1rem;
       }
     }
