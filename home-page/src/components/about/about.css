@@ -97,14 +97,14 @@
       margin-bottom: 1rem;
 
       .primary-img {
-        max-width: 80%; /* Scale down the primary image */
+        max-width: 100%;
         margin-bottom: 1rem;
       }
 
       .secondary-img {
-        right: -30px;
+        right: 30px;
         bottom: -20px;
-        width: 80%; /* Scale secondary image */
+        width: 30%;
       }
     }
 
@@ -114,15 +114,15 @@
     }
 
     h2 {
-      font-size: 2rem; /* Adjust heading size for smaller screens */
+      font-size: 2rem;
     }
 
     p {
-      font-size: 1.1rem; /* Adjust paragraph size for readability */
+      font-size: 1.1rem;
     }
 
     .btn {
-      width: 100%; /* Full-width button on smaller screens */
+      width: 100%;
       margin-top: 1rem;
     }
   }

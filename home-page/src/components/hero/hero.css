@@ -72,8 +72,7 @@
   @media (max-width: 768px) {
     .hero-content {
       width: 80%;
-      left: 10%;
-      top: 23rem;
+      margin: 0 auto;
       text-align: center;
 
       h1 {
