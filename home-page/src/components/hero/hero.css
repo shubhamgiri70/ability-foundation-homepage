@@ -6,9 +6,9 @@
   overflow: hidden;
 
   .hero-content {
-    width: 37%;
+    width: 45%;
     position: absolute;
-    top: 23rem;
+    top: 16rem;
     left: 170px;
 
     h1 {
@@ -52,7 +52,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
-    height: 1033px;
+    height: 90vh;
     width: 70%;
     border-top-left-radius: 3.5rem;
   }

@@ -25,8 +25,8 @@
 
     /* Content Section */
     .employmentwing-content {
-      width: 45%;
-      text-align: center;
+      width: 50%;
+      text-align: start;
       padding: 1rem;
 
       .badge {
@@ -60,7 +60,6 @@
 
       .button-group {
         display: flex;
-        justify-content: center;
         gap: 1rem;
 
         .btn {
